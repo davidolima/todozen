@@ -522,7 +522,7 @@ export default class TodoListExtension extends Extension {
 
         if (scrollToTop) {
             // Scroll to top to make the confirmation visible
-            this.scrollView?.get_vscroll_bar()?.get_adjustment()?.set_value(0);
+            this.scrollView?.vadjustment?.set_value(0);
         }
 
         // Clear previous timeout if any
